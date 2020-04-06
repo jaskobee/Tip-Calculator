@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tip Calculator by Jasko.be</title>
+    <!-- font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.css" />
+    <!-- My Own Style -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+    <header>
+        <h1>USA Tip Calculator</h1>
+    </header>
+    <main>
+        <form>
+            <label for="prijs">How much was the bill?</label>
+            <input id="prijs" type="text" placeholder="Bill Amount in $">
+            <label for="service ">How was your service?</label>
+                <select name="optie" id="optie" class="selectDown">
+                    <option disabled value="0" selected>-- Choose an Option --</option>
+                    <option value="0.3">30&#37; &#45; Outstanding</option>
+                    <option value="0.2">20&#37; &#45; Good</option>
+                    <option value="0.15">15&#37; &#45; It was OK</option>
+                    <option value="0.1">10&#37; &#45; Bad</option>
+                    <option value="0.05">5&#37; &#45; Terrible</option>
+                </select>
+        <label for="share">People sharing the bill</label>
+        <input id="share" type="text" placeholder="Number of People">
+        </form>
+        <button id="calc" ><i class="fas fa-calculator"></i></button>
+        <!--  -------------------- End of Calculator Main -------------------------- -->
+        <div id="totalTip">
+            <p id="tip"></p>
+            <p id="each"></p>
+            <i class="fas"></i>
+        </div>
+    </main>
+</div>
+<footer>
+    <a href="http://www.jasko.be" target="blank_"><img src="../img/LogoJB1.png" alt="Jasko.be Logo"></a>
+</footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
